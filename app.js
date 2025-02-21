@@ -435,7 +435,7 @@ let travelMethodCounts = {};
 
 // Complete the exercise in the space below:
 travelMethodCounts = travelMethods.reduce((acc, method) => {
-    if (acc[method]) {
+    if (acc[method]) { // using acc[method] instead of acc.methods for dynamic value
         acc[method] += 1;
     } else {
         acc[method] = 1;
